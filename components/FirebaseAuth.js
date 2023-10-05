@@ -2,7 +2,11 @@
 import React, { useEffect, useState } from 'react'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 import { getApp } from 'firebase/app'
-import { getAuth, EmailAuthProvider } from 'firebase/auth'
+import { getAuth, EmailAuthProvider, GoogleAuthProvider } from "firebase/auth";
+
+const provider = new GoogleAuthProvider();
+// provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
 
 // Note that next-firebase-auth inits Firebase for us,
 // so we don't need to.
@@ -14,6 +18,10 @@ const firebaseAuthConfig = {
   signInOptions: [
     {
       provider: EmailAuthProvider.PROVIDER_ID,
+      requireDisplayName: false,
+    },
+    {
+      provider: GoogleAuthProvider.PROVIDER_ID,
       requireDisplayName: false,
     },
   ],
