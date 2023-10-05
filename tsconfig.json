@@ -1,15 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "./build",
-    "paths": {
-      "src/*": [
-        "./src/*"
-      ],
-      "codemod/*": [
-        "./codemod/*"
-      ]
-    },
     "target": "es5",
     "lib": [
       "dom",
@@ -20,20 +10,21 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
-    "**/*"
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
   ],
   "exclude": [
-    "build",
-    "coverage",
-    "example",
     "node_modules"
   ]
 }
