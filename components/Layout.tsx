@@ -1,4 +1,4 @@
-import { Container, Toolbar } from '@mui/material';
+import { Container } from '@mui/material';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Head from 'next/head';
@@ -37,7 +37,6 @@ export default function Layout({ children, title }: any) {
           }}
         >
           <Box sx={{ py: 4 }}>
-            <Toolbar />
             {children}
           </Box>
           <Box sx={{ pt: 2 }}>
