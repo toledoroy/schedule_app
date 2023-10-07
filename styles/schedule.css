@@ -1,0 +1,17 @@
+.schedule_table {
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+}
+.schedule_table th {
+    text-align: center;
+    border: 1px solid #aaa;
+    padding: 2px 8px;
+    text-transform: capitalize;
+}
+.schedule_table td {
+    border: 1px solid #aaa;
+    padding: 1px 5px;
+}
+.schedule_table .title { 
+    font-weight: 500;
+}
