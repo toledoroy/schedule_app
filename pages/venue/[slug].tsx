@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Schedule from "../../components/Schedule";
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
+import Tooltip from '@mui/material/Tooltip';
 
 /**
  * Single Venue Page
@@ -27,6 +28,7 @@ export default function SingleVenuePge(): JSX.Element {
         disableGutters
       >
         <Typography variant="h1" sx={{textTransform:'capitalize'}}>{venueData?.name || ''}</Typography>
+        <Toolbar />
         <div className="schedule_header">
             {!!venueData?.logo && <img className="venue_logo" src={venueData.logo} />}
             {venueData?.header}
@@ -36,3 +38,14 @@ export default function SingleVenuePge(): JSX.Element {
     </Container>
     );
 }
+
+const Toolbar = (): JSX.Element => (
+<Box id="toolbar" sx={{backgroundColor:'primary'}}>
+    <LangSelect />
+</Box>)
+
+const LangSelect = (): JSX.Element => (<>
+    <span>EN</span>
+    |
+    <span>TH</span>
+</>)
