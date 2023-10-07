@@ -1,7 +1,6 @@
 import React from 'react'
 import { useUser, withUser, withUserTokenSSR } from 'next-firebase-auth'
-import Header from '../components/Header'
-import DemoPageLinks from '../components/DemoPageLinks'
+// import Header from '../components/Header'
 
 const styles = {
   content: {
@@ -12,7 +11,7 @@ const styles = {
   },
 }
 
-const Demo = () => {
+const Main = () => {
   const user = useUser();
   return (
     <div>
@@ -24,12 +23,11 @@ const Demo = () => {
             This page does not require authentication, so it won't redirect to
             the login page if you are not signed in.
           </p>
-          <p>
+          {/* <p>
             If you remove `getServerSideProps` from this page, it will be static
             and load the authed user only on the client side.
-          </p>
+          </p> */}
         </div>
-        {/* <DemoPageLinks /> */}
       </div>
     </div>
   )
@@ -37,4 +35,4 @@ const Demo = () => {
 
 export const getServerSideProps = withUserTokenSSR()()
 
-export default withUser()(Demo)
+export default withUser()(Main)

@@ -10,8 +10,25 @@
 }
 .schedule_table td {
     border: 1px solid #aaa;
-    padding: 1px 5px;
+    padding: 1px 8px;
+    text-align: center;
 }
 .schedule_table .title { 
     font-weight: 500;
+}
+.schedule_header {
+    font-size: 39px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 76px;
+}
+.schedule_header .venue_logo {
+    max-height: 76px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.schedule_footer {
+
 }

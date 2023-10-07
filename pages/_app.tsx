@@ -1,15 +1,15 @@
 import React from 'react'
 import '../styles/globals.css'
+import '../styles/schedule.css'
 import initAuth from '../utils/initAuth'
-import AppBar from '../components/AppBar'
+import Layout from '../components/Layout'
 
 initAuth()
 
-const MyApp = ({ Component, pageProps }: any) => (
-  <>
-  <AppBar />
-  <Component {...pageProps} />
-  </>
+const App = ({ Component, pageProps }: any) => (
+  <Layout>
+    <Component {...pageProps} />
+  </Layout>
 )
 
-export default MyApp
+export default App;
