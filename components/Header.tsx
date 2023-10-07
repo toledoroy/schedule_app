@@ -35,7 +35,7 @@ const styles = {
   },
 }
 
-const Header = ({ email, signOut }) => (
+const Header = ({ email, signOut }: any) => (
   <div style={styles.container}>
     <div style={styles.versionsContainer}>
       <div style={styles.nfaVersion}>Version {nfaDependencyVersion}</div>
@@ -43,6 +43,7 @@ const Header = ({ email, signOut }) => (
       <div>Firebase {firebaseDependencyVersion}</div>
       <div>firebase-admin {firebaseAdminDependencyVersion}</div>
     </div>
+    
     <div style={styles.loginContainer}>
       {email ? (
         <>

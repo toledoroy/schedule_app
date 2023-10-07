@@ -13,10 +13,10 @@ const styles = {
 }
 
 const Demo = () => {
-  const user = useUser()
+  const user = useUser();
   return (
     <div>
-      <Header email={user.email} signOut={user.signOut} />
+      {/* <Header email={user.email} signOut={user.signOut} /> */}
       <div style={styles.content}>
         <div style={styles.infoTextContainer}>
           <h3>Home</h3>
@@ -29,7 +29,7 @@ const Demo = () => {
             and load the authed user only on the client side.
           </p>
         </div>
-        <DemoPageLinks />
+        {/* <DemoPageLinks /> */}
       </div>
     </div>
   )

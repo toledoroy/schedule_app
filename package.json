@@ -9,6 +9,10 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.12",
+    "@mui/material": "^5.14.12",
     "firebase": "9.16.0",
     "firebase-admin": "^11.9.0",
     "next": "13.4.9",
@@ -23,6 +27,6 @@
     "@types/node": "^20.4.1",
     "@types/react": "^18.2.14",
     "eslint-config-next": "^13.4.9",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   }
 }
