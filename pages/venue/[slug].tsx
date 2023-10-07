@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Schedule from "../../components/Schedule";
-import { Box, Container, Typography } from "@mui/material";
-import Tooltip from '@mui/material/Tooltip';
+import { Box, Container, Tooltip, Typography } from "@mui/material";
+import ImageIcon from '@mui/icons-material/Image';
 
 /**
  * Single Venue Page
@@ -39,13 +39,27 @@ export default function SingleVenuePge(): JSX.Element {
     );
 }
 
+/**
+ * Actions Toolbar
+ */
 const Toolbar = (): JSX.Element => (
 <Box id="toolbar" sx={{backgroundColor:'primary'}}>
     <LangSelect />
+    <ImageExport />
 </Box>)
 
 const LangSelect = (): JSX.Element => (<>
-    <span>EN</span>
-    |
-    <span>TH</span>
+    <Tooltip title="English">
+        <span>EN</span>
+    </Tooltip>
+    <span style={{margin:'0 2px'}}>|</span>
+    <Tooltip title="Thai">
+        <span>TH</span>
+    </Tooltip>
+</>)
+
+const ImageExport = (): JSX.Element => (<>
+    <Tooltip title="Download Image">
+        <ImageIcon sx={{ml:2, verticalAlign:'middle', cursor:'pointer'}} />
+    </Tooltip>
 </>)
