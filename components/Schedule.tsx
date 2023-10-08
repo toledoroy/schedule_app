@@ -168,9 +168,15 @@ const Schedule = ({  }: any) => {
                 </td>
                 {days.map(day => <td>
                     {/* {day}, {slotIndex} */}
-                    <div className="time">{data?.[day]?.[slotIndex]?.time || ''}</div>
-                    <div className="title">{data?.[day]?.[slotIndex]?.title || ''}</div>
-                    <div className="teacher"> {data?.[day]?.[slotIndex]?.teacher ? `with ${data[day][slotIndex].teacher}`: ''}</div>
+                    {data?.[day]?.[slotIndex]?.time && 
+                        <div className="time">{data?.[day]?.[slotIndex]?.time || ''}</div>
+                    }
+                    {data?.[day]?.[slotIndex]?.title && 
+                        <div className="title">{data?.[day]?.[slotIndex]?.title || ''}</div>
+                    }
+                    {data?.[day]?.[slotIndex]?.teacher && 
+                        <div className="teacher"> {data?.[day]?.[slotIndex]?.teacher ? `with ${data[day][slotIndex].teacher}`: ''}</div>
+                    }
                 </td>)}
             </tr>)}
             

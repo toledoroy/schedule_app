@@ -18,6 +18,7 @@
 }
 .schedule_table .title { 
     font-weight: 500;
+    line-height: 1.3rem;
 }
 .schedule_header {
     font-size: 39px;
@@ -41,13 +42,18 @@
     .schedule_header {
         text-transform: uppercase;
     }
+    
     .schedule_table{
         td {
             background-color: #C5FDFE;
             border: 12px solid white;
+            
+        }
+        td:empty{
+            background-color: transparent;
         }
         tr:first-child {
-            background-color: #02ABD6;
+            background-color: #02ABD6;         
             th { 
                 border: none; 
                 color: #fff;  
@@ -60,7 +66,6 @@
         tr td:first-child {
             background-color: transparent;
         }
-    
-    }
+   }    
 
 }
