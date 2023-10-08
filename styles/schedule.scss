@@ -19,7 +19,6 @@
 .schedule_header {
     font-size: 39px;
     font-weight: 300;
-    text-transform: uppercase;
     letter-spacing: 8px;
     line-height: 76px;
 }
@@ -31,4 +30,12 @@
 }
 .schedule_footer {
 
+}
+
+/* CUSTOM DESIGNS */
+
+.schedule_yogahouse {
+    .schedule_header {
+        text-transform: uppercase;
+    }
 }

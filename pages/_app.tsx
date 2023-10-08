@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/globals.css'
-import '../styles/schedule.css'
+import '../styles/schedule.scss'
 import initAuth from '../utils/initAuth'
 import Layout from '../components/Layout'
 
