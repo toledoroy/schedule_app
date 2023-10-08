@@ -1,6 +1,9 @@
 .schedule_table {
-    border-collapse: collapse;
+    // border-collapse: collapse;
+    border-spacing: 0;
     border: 1px solid #aaa;
+    margin: 0;
+    border: none;
 }
 .schedule_table th {
     text-align: center;
@@ -38,4 +41,26 @@
     .schedule_header {
         text-transform: uppercase;
     }
+    .schedule_table{
+        td {
+            background-color: #C5FDFE;
+            border: 12px solid white;
+        }
+        tr:first-child {
+            background-color: #02ABD6;
+            th { 
+                border: none; 
+                color: #fff;  
+                font-weight: 300;
+                font-size: 18px;
+                padding: 0;
+                text-transform:uppercase;
+            }
+        }
+        tr td:first-child {
+            background-color: transparent;
+        }
+    
+    }
+
 }
