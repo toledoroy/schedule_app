@@ -112,8 +112,8 @@
     "firebase": ">=9.0.0 <12",
     "firebase-admin": ">=10.0.0 <12",
     "next": ">=9.5.0 <16",
-    "react": ">=16.8.0 <19",
-    "react-dom": ">=16.8.0 <19"
+    "react": ">=16.8.0 <20",
+    "react-dom": ">=16.8.0 <20"
   },
   "peerDependenciesMeta": {
     "firebase": {
