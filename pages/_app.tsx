@@ -3,7 +3,9 @@ import '../styles/globals.css'
 import '../styles/schedule.scss'
 import initAuth from '../utils/initAuth'
 import Layout from '../components/Layout'
+import initFirebase from '../utils/initFirebase'
 
+initFirebase()
 initAuth()
 
 const App = ({ Component, pageProps }: any) => (
